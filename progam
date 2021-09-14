@@ -1,0 +1,84 @@
+#include <stdio.h>
+
+
+
+main(){
+//VARIAVEL QUE ALOCA O VALOR DOS NUMEROS
+ int n, n2,soma=0;
+// COMANDO QUE EXIBE DADOS PARA O PERIFERICO DE SAIDA (PADRÃO)
+ printf("informe um numero inteiro:");
+//COMANDO QUE CAPTURA O DADOS APARTIR DO PERIFERICO DE ENTRADA (PADRÃO)
+ scanf("%d",&n);
+ // COMANDO QUE EXIBE DADOS PARA O PERIFERICO DE SAIDA (PADRÃO)
+ printf("informe outro numero inteiro:");
+//COMANDO QUE CAPTURA O DADOS APARTIR DO PERIFERICO DE ENTRADA (PADRÃO)
+ scanf("%d",&n2);
+//VARIAVEL QUE ALOCA O VALOR DO LAÇO
+ int cont;
+ //VARIAVEL QUE ALOCA O CALCULO DE DOBRO
+ int dobro=2*n;
+ 
+ for(cont=1;cont<=n;cont++)
+  
+  {
+
+  if(n%cont==0)
+
+  {
+
+   soma=soma+cont;
+
+  }
+
+  }
+//CONDICIONAL SE A SOMA DOS DIVISORES FOREM IGUAIS AOS NUMEROS ELES SÃO PERFEITOS
+ if(soma==dobro)
+
+ {
+// COMANDO QUE EXIBE DADOS PARA O PERIFERICO DE SAIDA (PADRÃO)
+  printf("%d eh um numero perfeito",n);
+
+ }
+// SE A SOMA DOS DIVISORES NÃO FOREM IGUAIS AOS NUMEROS ELES NÃO SÃO PERFEITOS
+ else
+
+ {
+// COMANDO QUE EXIBE DADOS PARA O PERIFERICO DE SAIDA (PADRÃO)
+  printf("%d nao eh um numero perfeito",n);
+
+ }
+ //VARIAVEL QUE ALOCA O VALOR DO LAÇO
+ int cont2;
+ //VARIAVEL QUE ALOCA O CALCULO DE DOBRO
+ int dobro2=2*n2;
+  //ESTRUTURA DE REPETIÇÃO CONTROLADA PARA OBTER DETERMINADO RESULTADO COM BASE NAS INFORMAÇÕES INTRODUTORIAS
+  for(cont2=1;cont2<=n2;cont2++)
+   {
+
+  if(n2%cont2==0)
+
+  {
+
+   soma=soma+cont2;
+
+  }
+
+  }
+//CONDICIONAL SE A SOMA DOS DIVISORES FOREM IGUAIS AOS NUMEROS ELES SÃO PERFEITOS
+ if(soma==dobro2)
+
+ {
+// COMANDO QUE EXIBE DADOS PARA O PERIFERICO DE SAIDA (PADRÃO)
+  printf("\n%d eh um numero perfeito",n2);
+
+ }
+// SE A SOMA DOS DIVISORES NÃO FOREM IGUAIS AOS NUMEROS ELES NÃO SÃO PERFEITOS
+ else
+
+ {
+// COMANDO QUE EXIBE DADOS PARA O PERIFERICO DE SAIDA (PADRÃO)
+  printf("\n%d nao eh um numero perfeito",n2);
+
+ }
+
+ }
