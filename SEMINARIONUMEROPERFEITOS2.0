@@ -2,7 +2,10 @@
 /*
 (👍≖‿‿≖)👍  @o.douglax 
 */
-main(){
+/*
+Faça um programa que leia 2 valores e informe se eles são divisores perfeitos
+*/
+int main(){
 //DECLARAÇÃO DE VARIAVEIS
 //VARIAVEL QUE CONTEM O CONTROLE DO LOOP
 char res;
@@ -23,33 +26,35 @@ char res;
  for(cont=1;cont<=n;cont++)
   
   {
+//se numero divido por cont for igual a zero ele acrescenta mais 1.
+     if(n%cont==0)
 
-  if(n%cont==0)
+     {
 
-  {
+    soma=soma+cont;
 
-   soma=soma+cont;
-
-  }
+    }
 
   }
 //CONDICIONAL SE A SOMA DOS DIVISORES FOREM IGUAIS AOS NUMEROS ELES SÃO PERFEITOS
- if(soma==dobro)
+  if(soma==dobro)
 
- {
+  {
 // COMANDO QUE EXIBE DADOS PARA O PERIFERICO DE SAIDA (PADRÃO)
-  printf("%d eh um numero perfeito",n);
+   printf("%d eh um numero perfeito",n);
 
- }
+  }
 // SE A SOMA DOS DIVISORES NÃO FOREM IGUAIS AOS NUMEROS ELES NÃO SÃO PERFEITOS
- else
+  else
 
- {
+  {
 // COMANDO QUE EXIBE DADOS PARA O PERIFERICO DE SAIDA (PADRÃO)
-  printf("%d nao eh um numero perfeito",n);
+   printf("%d nao eh um numero perfeito",n);
 
- }
- printf("\nDeseja executar o programa novamente ? (s/n): ");
+  }
+ // COMANDO QUE EXIBE DADOS PARA O PERIFERICO DE SAIDA (PADRÃO)
+printf("\nDeseja executar o programa novamente ? (s/n): ");
+ //COMANDO QUE CAPTURA O DADOS APARTIR DO PERIFERICO DE ENTRADA (PADRÃO)
  scanf("%s", &res);
- }while(res == 's');
+ }while(res == 's'); //LAÇO QUE REPETE O PROGRAMA OU ENCERRA
  }
