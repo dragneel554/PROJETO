@@ -1,0 +1,28 @@
+import java.util.Scanner;
+/*
+Faça um programa que leia 2 valores e informe se eles são divisores perfeitos
+*/
+class Main {
+  public static void main(String[] args) {
+    Scanner teclado = new Scanner(System.in);
+
+    	for (int i = 0; i < 10; i++) {
+
+        	System.out.println("Digite um numero: ");
+        	int valor = 0;
+        	int x = teclado.nextInt();
+
+        	for (int j = 1; j < x; j++) {
+
+            	if (x % j == 0) 
+                	valor += j;
+            	
+        	}
+        	if (valor == x) 
+            		System.out.println("Numero perfeito");
+        	 else 
+            		System.out.println("Não é numero perfeito");
+        	
+    	}
+  }
+}
