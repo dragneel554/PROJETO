@@ -1,0 +1,61 @@
+#include <iostream>
+
+/*
+(👍≖‿‿≖)👍  @o.douglax 
+*/
+/*
+Faça um programa que leia 2 valores e informe se eles são divisores perfeitos
+*/
+int main(){
+//DECLARAÇÃO DE VARIAVEIS
+//VARIAVEL QUE CONTEM O CONTROLE DO LOOP
+char res;
+ //VARIAVEL QUE LER O PROGRAMA ANTES DE REALIZAR A CONDIÇÃO DO LAÇO PRIMARIO
+ do{
+
+ int n=0,soma=0;
+// COMANDO QUE EXIBE DADOS PARA O PERIFERICO DE SAIDA (PADRÃO)
+ std::cout << "informe um numero inteiro:";
+//COMANDO QUE CAPTURA O DADOS APARTIR DO PERIFERICO DE ENTRADA (PADRÃO)
+ std::cin >> n;
+ 
+//VARIAVEL QUE ALOCA O VALOR DO LAÇO
+ int cont;
+ //VARIAVEL QUE ALOCA O CALCULO DE DOBRO
+ int dobro=2*n;
+ 
+ for(cont=1;cont<=n;cont++)
+  
+  {
+//se numero divido por cont for igual a zero ele acrescenta mais 1.
+  if(n%cont==0)
+
+  {
+
+   soma=soma+cont;
+
+  }
+
+  }
+//CONDICIONAL SE A SOMA DOS DIVISORES FOREM IGUAIS AOS NUMEROS ELES SÃO PERFEITOS
+ if(soma==dobro)
+
+ {
+// COMANDO QUE EXIBE DADOS PARA O PERIFERICO DE SAIDA (PADRÃO)
+  std::cout << "eh um numero perfeito";
+
+ }
+// SE A SOMA DOS DIVISORES NÃO FOREM IGUAIS AOS NUMEROS ELES NÃO SÃO PERFEITOS
+ else
+
+ {
+// COMANDO QUE EXIBE DADOS PARA O PERIFERICO DE SAIDA (PADRÃO)
+  std::cout << " nao eh um numero perfeito";
+
+ }
+ // COMANDO QUE EXIBE DADOS PARA O PERIFERICO DE SAIDA (PADRÃO)
+ std::cout << "\nDeseja executar o programa novamente ? (s/n): ";
+ //COMANDO QUE CAPTURA O DADOS APARTIR DO PERIFERICO DE ENTRADA (PADRÃO)
+ std::cin >>res;
+ }while(res == 's'); //LAÇO QUE REPETE O PROGRAMA OU ENCERRA
+ }
